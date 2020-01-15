@@ -1,0 +1,5 @@
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:controller="com.nick.wood.rts.controller.MainWindowController"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="canvas">
+</AnchorPane>
