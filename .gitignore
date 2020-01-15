@@ -1,3 +1,4 @@
-/out/
-.idea/workspace.xml
-.idea/uiDesigner.xml
+/out
+/.idea
+/target
+AStarVisualTest.iml

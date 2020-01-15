@@ -17,8 +17,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-commons:1.0.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.opentest4j:opentest4j:1.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.3" level="project" />
-    <orderEntry type="library" name="Maven: com.nick.wood.custom_math:CustomMath:0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.nick.wood.a_star_alg:AStarAlg:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.nick.wood.a_star_alg:AStarAlg:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:14-ea+4" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:14-ea+4" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:14-ea+4" level="project" />

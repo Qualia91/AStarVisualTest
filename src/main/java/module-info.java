@@ -10,5 +10,4 @@ module com.nick.wood.a_star_alg.visual_test {
 	requires java.desktop;
 
 	requires com.nick.wood.a_star_alg.AStarAlg;
-	requires com.nick.wood.custom_math.CustomMath;
 }

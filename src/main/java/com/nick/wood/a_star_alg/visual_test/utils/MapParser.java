@@ -1,7 +1,6 @@
 package com.nick.wood.a_star_alg.visual_test.utils;
 
 import com.nick.wood.a_star_alg.map.TileType;
-import com.nick.wood.custom_math.Vector2I;
 
 public class MapParser {
 
@@ -38,7 +37,7 @@ public class MapParser {
     }
 
 
-    public static Vector2I getInitialPlayerPosition(String[][] inputMapData) {
+    public static int[] getInitialPlayerPosition(String[][] inputMapData) {
 
         int rowIndex = 0;
         for (String[] row : inputMapData) {
@@ -46,13 +45,13 @@ public class MapParser {
             for (String item : row) {
 
                 if (item.equals("2")) {
-                    return new Vector2I(rowIndex, colIndex);
+                    return new int[]{rowIndex, colIndex};
                 }
                 colIndex++;
             }
             rowIndex++;
         }
 
-        return new Vector2I();
+        return new int[]{0, 0};
     }
 }

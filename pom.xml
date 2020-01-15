@@ -18,15 +18,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.nick.wood.custom_math</groupId>
-            <artifactId>CustomMath</artifactId>
-            <version>0.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.nick.wood.a_star_alg</groupId>
             <artifactId>AStarAlg</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
 
         <dependency>

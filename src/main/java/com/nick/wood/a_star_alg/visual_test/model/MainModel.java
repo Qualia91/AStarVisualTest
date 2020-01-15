@@ -3,7 +3,6 @@ package com.nick.wood.a_star_alg.visual_test.model;
 import com.nick.wood.a_star_alg.map.Map;
 import com.nick.wood.a_star_alg.map.Tile;
 import com.nick.wood.a_star_alg.pathfinding.Pathfinding;
-import com.nick.wood.custom_math.Vector2I;
 import com.nick.wood.a_star_alg.visual_test.model.sprite.Unit;
 import com.nick.wood.a_star_alg.visual_test.utils.MapParser;
 import com.nick.wood.a_star_alg.visual_test.utils.MapReader;
@@ -30,10 +29,10 @@ public class MainModel {
 
     private final Pathfinding pathfinding;
     private final SimpleObjectProperty<Path> pathProperty = new SimpleObjectProperty<>(new Path());
-    private Vector2I destinationLocation = new Vector2I();
+    private int[] destinationLocation = new int[]{0,0};
     private Tile[][] tileMatrix;
     private List<Tile> pathTiles;
-    private Vector2I startPosition;
+    private int[] startPosition;
     private final Unit unit = new Unit();
     private ImageView img;
 
@@ -57,8 +56,8 @@ public class MainModel {
 
         this.pathfinding = new Pathfinding();
 
-        unit.getShape().setTranslateX(startPosition.getX());
-        unit.getShape().setTranslateY(startPosition.getY());
+        unit.getShape().setTranslateX(startPosition[0]);
+        unit.getShape().setTranslateY(startPosition[1]);
 
         KeyFrame f = new KeyFrame(Duration.millis(50),
                 ae -> unit.update());
@@ -74,7 +73,7 @@ public class MainModel {
 
     private void findPath() {
 
-        startPosition = new Vector2I((int)unit.getShape().getTranslateX(), (int)unit.getShape().getTranslateY());
+        startPosition = new int[]{(int)unit.getShape().getTranslateX(), (int)unit.getShape().getTranslateY()};
 
         pathTiles = pathfinding.getRoute(tileMatrix, startPosition, destinationLocation);
 
@@ -105,7 +104,7 @@ public class MainModel {
     }
 
     public void updateDestinationPosition(Point3D endPoint) {
-        destinationLocation = new Vector2I((int)endPoint.getX(), (int)endPoint.getY());
+        destinationLocation = new int[]{(int)endPoint.getX(), (int)endPoint.getY()};
 
         findPath();
     }
