@@ -1,9 +1,12 @@
-module com.nick.wood.RTS {
+module com.nick.wood.a_star_alg.visual_test {
 
-	exports com.nick.wood.rts to javafx.graphics;
-	exports com.nick.wood.rts.controller to javafx.fxml;
+	exports com.nick.wood.a_star_alg.visual_test to javafx.graphics;
+	exports com.nick.wood.a_star_alg.visual_test.controller to javafx.fxml;
 
 	requires javafx.fxml;
 	requires javafx.graphics;
 	requires java.desktop;
+
+	requires com.nick.wood.a_star_alg.AStarAlg;
+	requires com.nick.wood.custom_math.CustomMath;
 }

@@ -1,8 +1,8 @@
-package com.nick.wood.rts.controller;
+package com.nick.wood.a_star_alg.visual_test.controller;
 
-import com.nick.wood.rts.model.MainModel;
+import com.nick.wood.a_star_alg.visual_test.model.MainModel;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -12,6 +12,7 @@ import java.util.ResourceBundle;
 
 public class MainWindowController implements Initializable {
 
+    @FXML
     public AnchorPane canvas;
 
     private final MainModel model;
@@ -23,7 +24,7 @@ public class MainWindowController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        final Image image = new Image("File:src/com/nick/wood/rts/assets/testMap.bmp");
+        final Image image = new Image("File:src/com/nick/wood/a_star_alg/visual_test/assets/testMap.bmp");
         ImageView img = new ImageView(image);
         canvas.getChildren().add(img);
         model.getRoute().addListener((observable, oldValue, newValue) -> {

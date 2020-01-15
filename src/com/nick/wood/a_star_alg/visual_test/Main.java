@@ -1,7 +1,7 @@
-package com.nick.wood.rts;
+package com.nick.wood.a_star_alg.visual_test;
 
-import com.nick.wood.rts.controller.MainWindowController;
-import com.nick.wood.rts.model.MainModel;
+import com.nick.wood.a_star_alg.visual_test.controller.MainWindowController;
+import com.nick.wood.a_star_alg.visual_test.model.MainModel;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

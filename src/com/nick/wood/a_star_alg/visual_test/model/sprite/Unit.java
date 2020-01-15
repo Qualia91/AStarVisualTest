@@ -1,8 +1,7 @@
-package com.nick.wood.rts.model.sprite;
+package com.nick.wood.a_star_alg.visual_test.model.sprite;
 
-import com.nick.wood.rts.model.map.Tile;
-import com.nick.wood.rts.model.map.TileType;
-import com.nick.wood.rts.utils.Vector2I;
+import com.nick.wood.a_star_alg.map.Tile;
+import com.nick.wood.a_star_alg.map.TileType;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Shape;
 

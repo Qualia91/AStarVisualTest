@@ -1,12 +1,7 @@
-package com.nick.wood.rts.utils;
+package com.nick.wood.a_star_alg.visual_test.utils;
 
-import com.nick.wood.rts.model.GoalType;
-import com.nick.wood.rts.model.map.TileType;
-import javafx.util.Pair;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import com.nick.wood.a_star_alg.map.TileType;
+import com.nick.wood.custom_math.Vector2I;
 
 public class MapParser {
 
