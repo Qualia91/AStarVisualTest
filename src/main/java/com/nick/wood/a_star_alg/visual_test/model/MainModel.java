@@ -11,6 +11,8 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.geometry.Point3D;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.LineTo;
 import javafx.scene.shape.MoveTo;
@@ -18,6 +20,10 @@ import javafx.scene.shape.Path;
 import javafx.util.Duration;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.List;
 
 public class MainModel {
@@ -29,11 +35,19 @@ public class MainModel {
     private List<Tile> pathTiles;
     private Vector2I startPosition;
     private final Unit unit = new Unit();
+    private ImageView img;
 
 
-    public MainModel() {
+    public MainModel(URI mapURI) {
 
-        String[][] mapMatrix = MapReader.readBMPMap(new File("src/com/nick/wood/a_star_alg/visual_test/assets/testMap.bmp"));
+        try {
+            img = new ImageView(new Image(mapURI.toURL().toString()));
+        } catch (MalformedURLException e) {
+            img = null;
+            e.printStackTrace();
+        }
+
+        String[][] mapMatrix = MapReader.readBMPMap(new File(mapURI));
 
         startPosition = MapParser.getInitialPlayerPosition(mapMatrix);
 
@@ -94,5 +108,9 @@ public class MainModel {
         destinationLocation = new Vector2I((int)endPoint.getX(), (int)endPoint.getY());
 
         findPath();
+    }
+
+    public ImageView getImg() {
+        return img;
     }
 }

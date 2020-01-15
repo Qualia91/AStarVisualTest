@@ -24,9 +24,7 @@ public class MainWindowController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        final Image image = new Image("File:src/com/nick/wood/a_star_alg/visual_test/assets/testMap.bmp");
-        ImageView img = new ImageView(image);
-        canvas.getChildren().add(img);
+        canvas.getChildren().add(model.getImg());
         model.getRoute().addListener((observable, oldValue, newValue) -> {
             canvas.getChildren().remove(oldValue);
             canvas.getChildren().add(newValue);

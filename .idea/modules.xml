@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../AStarAlg/AStarAlg.iml" filepath="$PROJECT_DIR$/../AStarAlg/AStarAlg.iml" />
       <module fileurl="file://$PROJECT_DIR$/AStarVisualTest.iml" filepath="$PROJECT_DIR$/AStarVisualTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../CustomMath/CustomMath.iml" filepath="$PROJECT_DIR$/../CustomMath/CustomMath.iml" />
     </modules>
   </component>
 </project>
