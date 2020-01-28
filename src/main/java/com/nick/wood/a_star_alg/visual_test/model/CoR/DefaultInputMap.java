@@ -10,7 +10,7 @@ public class DefaultInputMap extends Handler {
 	public URI handleRequest(Request request) throws URISyntaxException {
 
 		// default ot tesMap.bmp which is in resources folder
-		URL url = getClass().getClassLoader().getResource("testMap.bmp");
+		URL url = getClass().getClassLoader().getResource(request.getDefaultFileString());
 		return Objects.requireNonNull(url).toURI();
 
 	}

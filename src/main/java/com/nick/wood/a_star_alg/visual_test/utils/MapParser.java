@@ -2,20 +2,27 @@ package com.nick.wood.a_star_alg.visual_test.utils;
 
 import com.nick.wood.a_star_alg.map.TileType;
 
+/**
+ * Class to hold Map parser functionality.
+ */
 public class MapParser {
 
-    public static TileType[][] ConvertToMapArray(String[][] inputMapData) {
+    /**
+     *
+     * @param inputMapData a 2D int array containing obstacle data.
+     * @return
+     */
+    public static TileType[][] ConvertToMapArray(int[][] inputMapData) {
         int xLenght = inputMapData.length;
         int yLength = inputMapData[0].length;
 
         TileType[][] returnMapData = new TileType[xLenght][yLength];
 
         int rowIndex = 0;
-        for (String[] row : inputMapData) {
+        for (int[] row : inputMapData) {
             int colIndex = 0;
-            for (String item : row) {
+            for (int type : row) {
 
-                int type = Integer.parseInt(item);
                 TileType tileType = TileType.BLACK;
                 if (type == 1) {
                     tileType = TileType.BLUE;
@@ -37,14 +44,14 @@ public class MapParser {
     }
 
 
-    public static int[] getInitialPlayerPosition(String[][] inputMapData) {
+    public static int[] getInitialPlayerPosition(int[][] inputMapData) {
 
         int rowIndex = 0;
-        for (String[] row : inputMapData) {
+        for (int[] row : inputMapData) {
             int colIndex = 0;
-            for (String item : row) {
+            for (int item : row) {
 
-                if (item.equals("2")) {
+                if (item == 2) {
                     return new int[]{rowIndex, colIndex};
                 }
                 colIndex++;

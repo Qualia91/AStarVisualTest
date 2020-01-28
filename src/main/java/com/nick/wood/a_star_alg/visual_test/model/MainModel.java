@@ -19,6 +19,7 @@ import javafx.scene.shape.Path;
 import javafx.util.Duration;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -31,22 +32,16 @@ public class MainModel {
     private final SimpleObjectProperty<Path> pathProperty = new SimpleObjectProperty<>(new Path());
     private int[] destinationLocation = new int[]{0,0};
     private Tile[][] tileMatrix;
-    private List<Tile> pathTiles;
     private int[] startPosition;
     private final Unit unit = new Unit();
     private ImageView img;
 
 
-    public MainModel(URI mapURI) {
+    public MainModel(URI mapURI) throws IOException {
 
-        try {
-            img = new ImageView(new Image(mapURI.toURL().toString()));
-        } catch (MalformedURLException e) {
-            img = null;
-            e.printStackTrace();
-        }
+        img = new ImageView(new Image(mapURI.toURL().toString()));
 
-        String[][] mapMatrix = MapReader.readBMPMap(new File(mapURI));
+        int[][] mapMatrix = MapReader.readBMPMap(new File(mapURI));
 
         startPosition = MapParser.getInitialPlayerPosition(mapMatrix);
 
@@ -75,7 +70,7 @@ public class MainModel {
 
         startPosition = new int[]{(int)unit.getShape().getTranslateX(), (int)unit.getShape().getTranslateY()};
 
-        pathTiles = pathfinding.getRoute(tileMatrix, startPosition, destinationLocation);
+        List<Tile> pathTiles = pathfinding.getRoute(tileMatrix, startPosition, destinationLocation);
 
         drawPath(pathTiles);
 
