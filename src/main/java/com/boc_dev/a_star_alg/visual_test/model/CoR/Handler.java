@@ -1,4 +1,4 @@
-package com.nick.wood.a_star_alg.visual_test.model.CoR;
+package com.boc_dev.a_star_alg.visual_test.model.CoR;
 
 import java.net.URI;
 import java.net.URISyntaxException;

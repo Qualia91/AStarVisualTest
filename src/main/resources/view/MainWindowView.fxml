@@ -1,5 +1,5 @@
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane fx:controller="com.nick.wood.a_star_alg.visual_test.controller.MainWindowController"
+<AnchorPane fx:controller="com.boc_dev.a_star_alg.visual_test.controller.MainWindowController"
             xmlns:fx="http://javafx.com/fxml"
             fx:id="canvas">
 </AnchorPane>

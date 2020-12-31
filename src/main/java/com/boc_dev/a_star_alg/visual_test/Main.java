@@ -1,10 +1,10 @@
-package com.nick.wood.a_star_alg.visual_test;
+package com.boc_dev.a_star_alg.visual_test;
 
-import com.nick.wood.a_star_alg.visual_test.controller.MainWindowController;
-import com.nick.wood.a_star_alg.visual_test.model.CoR.DefaultInputMap;
-import com.nick.wood.a_star_alg.visual_test.model.CoR.Request;
-import com.nick.wood.a_star_alg.visual_test.model.CoR.UserInputMap;
-import com.nick.wood.a_star_alg.visual_test.model.MainModel;
+import com.boc_dev.a_star_alg.visual_test.controller.MainWindowController;
+import com.boc_dev.a_star_alg.visual_test.model.CoR.DefaultInputMap;
+import com.boc_dev.a_star_alg.visual_test.model.CoR.Request;
+import com.boc_dev.a_star_alg.visual_test.model.CoR.UserInputMap;
+import com.boc_dev.a_star_alg.visual_test.model.MainModel;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,8 +14,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.Map;
 
 /**
  * Main method for JavaFx Application.
@@ -65,7 +63,7 @@ public class Main extends Application {
             Parent root = loader.load();
 
             primaryStage.setTitle("Visual A Star Test");
-            primaryStage.setScene(new Scene(root, 800, 600));
+            primaryStage.setScene(new Scene(root, 1920, 1080));
             primaryStage.show();
         } catch (IOException | URISyntaxException e) {
             e.printStackTrace();

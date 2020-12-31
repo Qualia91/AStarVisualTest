@@ -1,7 +1,7 @@
-package com.nick.wood.a_star_alg.visual_test.model.sprite;
+package com.boc_dev.a_star_alg.visual_test.model.sprite;
 
-import com.nick.wood.a_star_alg.map.Tile;
-import com.nick.wood.a_star_alg.map.TileType;
+import com.boc_dev.a_star_alg.map.Tile;
+import com.boc_dev.a_star_alg.map.TileType;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Shape;
 

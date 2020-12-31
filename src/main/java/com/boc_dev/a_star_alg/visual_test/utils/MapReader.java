@@ -1,4 +1,4 @@
-package com.nick.wood.a_star_alg.visual_test.utils;
+package com.boc_dev.a_star_alg.visual_test.utils;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

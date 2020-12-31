@@ -1,10 +1,8 @@
-package com.nick.wood.a_star_alg.visual_test.model.CoR;
+package com.boc_dev.a_star_alg.visual_test.model.CoR;
 
 import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.Objects;
 
 public class UserInputMap extends Handler {
 	@Override

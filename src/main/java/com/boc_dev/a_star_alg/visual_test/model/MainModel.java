@@ -1,11 +1,11 @@
-package com.nick.wood.a_star_alg.visual_test.model;
+package com.boc_dev.a_star_alg.visual_test.model;
 
-import com.nick.wood.a_star_alg.map.Map;
-import com.nick.wood.a_star_alg.map.Tile;
-import com.nick.wood.a_star_alg.pathfinding.Pathfinding;
-import com.nick.wood.a_star_alg.visual_test.model.sprite.Unit;
-import com.nick.wood.a_star_alg.visual_test.utils.MapParser;
-import com.nick.wood.a_star_alg.visual_test.utils.MapReader;
+import com.boc_dev.a_star_alg.visual_test.model.sprite.Unit;
+import com.boc_dev.a_star_alg.map.Map;
+import com.boc_dev.a_star_alg.map.Tile;
+import com.boc_dev.a_star_alg.pathfinding.Pathfinding;
+import com.boc_dev.a_star_alg.visual_test.utils.MapParser;
+import com.boc_dev.a_star_alg.visual_test.utils.MapReader;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.beans.property.SimpleObjectProperty;
@@ -20,10 +20,7 @@ import javafx.util.Duration;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.List;
 
 public class MainModel {

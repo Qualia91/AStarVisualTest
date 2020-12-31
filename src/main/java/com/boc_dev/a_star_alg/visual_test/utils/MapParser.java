@@ -1,6 +1,6 @@
-package com.nick.wood.a_star_alg.visual_test.utils;
+package com.boc_dev.a_star_alg.visual_test.utils;
 
-import com.nick.wood.a_star_alg.map.TileType;
+import com.boc_dev.a_star_alg.map.TileType;
 
 /**
  * Class to hold Map parser functionality.

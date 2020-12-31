@@ -1,6 +1,6 @@
-package com.nick.wood.a_star_alg.visual_test.controller;
+package com.boc_dev.a_star_alg.visual_test.controller;
 
-import com.nick.wood.a_star_alg.visual_test.model.MainModel;
+import com.boc_dev.a_star_alg.visual_test.model.MainModel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
